@@ -44,7 +44,7 @@ Q1 – Infineon IPT015N10N5: a 100 V, 300 A-rated N-channel MOSFET with a maximu
 ---
 2. TVS Diode
 
-A unidirectional TVS Diode is placed across the protected rail to protect against voltage spikes. When the MOSFET turns off, it will create high voltage spikes (V = L. di/dt). To suppress this,  we use a bulk capacitor(s). E = $\frac{1}{2} \cdot L \cdot I$ and since the energy needs to be stored in the capacitor as well, $E = \frac{1}{2} \cdot C \cdot (V_{max}^2$ - V_{nominal}^2$. After some calculations, we get about C = 1666uF. To minimize the ESR, we place these in parallel instead of 1 big capacitor. Hence 680u * 3 = 2040uF.  
+A unidirectional TVS Diode is placed across the protected rail to protect against voltage spikes. When the MOSFET turns off, it will create high voltage spikes (V = L. di/dt). To suppress this,  we use a bulk capacitor(s). E = $\frac{1}{2} \cdot L \cdot I$ and since the energy needs to be stored in the capacitor as well, $E = \frac{1}{2} \cdot C \cdot (V_{max}^2 - V_{nominal}^2)$. After some calculations, we get about C = 1666uF. To minimize the ESR, we place these in parallel instead of 1 big capacitor. Hence 680u * 3 = 2040uF.  
 
 ---
 3. Fuse
